@@ -5,48 +5,221 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/menu_background"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
-    
-<!--    <RelativeLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:padding="16dp">-->
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
 
-<!--        <ImageView-->
-<!--            android:layout_width="160dp"-->
-<!--            android:layout_height="160dp"-->
-<!--            android:layout_toStartOf="@+id/text_nombre"-->
-<!--            android:contentDescription="@string/icono_usuario"-->
-<!--            android:src="@drawable/icon_account_circle"/>-->
 
-<!--        <TextView-->
-<!--            android:layout_width="wrap_content"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:id="@+id/text_nombre"-->
-<!--            android:text="@string/nombre_estudiante"-->
-<!--            android:textSize="20sp"-->
-<!--            android:textColor="@color/white"-->
-<!--            android:background="@drawable/rounded_corner"-->
-<!--            android:padding="14dp"-->
-<!--            android:layout_centerInParent="true"-->
-<!--            android:layout_alignParentEnd="true"/>-->
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="416dp"
+        android:layout_height="190dp"
+        android:background="#ff595e"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:ignore="MissingConstraints,VisualLintBounds"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="0dp">
 
-<!--    </RelativeLayout>-->
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="366dp"
+            android:layout_height="110dp"
 
-<!--    <Button-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="160dp"-->
-<!--        android:id="@+id/numeros_naturales"-->
-<!--        android:background="@drawable/icon_account_circle"-->
-<!--        android:layout_marginTop="20dp"/>-->
+            android:background="#007A7A7A"
+            android:gravity="start|center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            tools:ignore="UselessParent">
 
-<!--    <Button-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="160dp"-->
-<!--        android:id="@+id/operaciones_basicas"-->
-<!--        android:background="@drawable/icon_account_circle"-->
-<!--        android:layout_marginTop="20dp"/>-->
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="140dp"
+                android:layout_height="95dp"
+                android:layout_weight="1"
+                android:contentDescription="@string/Avatar"
+
+                app:srcCompat="@drawable/avatar"
+                tools:ignore="ImageContrastCheck,VisualLintBounds" />
+
+            <LinearLayout
+                android:layout_width="176dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_weight="1"
+                    tools:ignore="NestedWeights" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/hola_user_name"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="TextContrastCheck,TextSizeCheck,VisualLintBounds" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="211dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:text="@string/level_99"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:textStyle="normal"
+                    tools:ignore="NestedWeights,TextContrastCheck,TextSizeCheck,VisualLintBounds" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="121dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16sp"
+            android:layout_marginTop="20dp"
+            android:text="@string/temas"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded,TextContrastCheck" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="416dp"
+        android:layout_height="538dp"
+        android:layout_marginTop="16dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        android:padding="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        tools:ignore="MissingConstraints,UselessLeaf,VisualLintBounds"
+        tools:layout_editor_absoluteX="1dp">
+
+        <LinearLayout
+            android:layout_width="375dp"
+            android:layout_height="186dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="163dp"
+                android:background="#00753131"
+                android:orientation="vertical"
+                android:padding="8sp">
+
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:text="Numeros Naturales"
+                    android:textColor="#000000"
+                    android:textColorHighlight="#653AB5"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText,TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:text="¡Juega y aprende con ejercicios interactivos diseñados para ti!"
+                    android:textSize="12sp"
+                    android:textStyle="italic"
+                    tools:ignore="HardcodedText,TextContrastCheck,TextSizeCheck" />
+
+                <Button
+                    android:id="@+id/numerosNaturales"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FD585D"
+                    android:text="Empezar!"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="HardcodedText,DuplicateSpeakableTextCheck,TextContrastCheck" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="168dp"
+                android:layout_height="wrap_content"
+                tools:ignore="ContentDescription,VisualLintBounds,ImageContrastCheck"
+                tools:srcCompat="@tools:sample/avatars" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="27dp" />
+
+        <LinearLayout
+            android:id="@+id/operacionesBasicas"
+            android:layout_width="375dp"
+            android:layout_height="186dp"
+            android:background="@drawable/rounded_corner"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="170dp"
+                android:layout_height="163dp"
+                android:background="#00753131"
+                android:orientation="vertical"
+                android:padding="8sp">
+
+
+                <TextView
+                    android:id="@+id/operaciones_Basicas"
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:text="@string/Operaciones_Basicas"
+                    android:textColor="#000000"
+                    android:textColorHighlight="#653AB5"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText,TextContrastCheck" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="58dp"
+                    android:text="¡Realiza juegos y desafíos para mejorar tus habilidades matemáticas!"
+                    android:textSize="12sp"
+                    android:textStyle="italic"
+                    tools:ignore="HardcodedText,TextContrastCheck,TextSizeCheck" />
+
+                <Button
+                    android:id="@+id/button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#FD585D"
+                    android:text="Empezar!"
+                    android:textColor="#FFFFFF"
+                    tools:ignore="DuplicateIds,HardcodedText,TextContrastCheck" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+
+                tools:ignore="ContentDescription,ImageContrastCheck,InefficientWeight,VisualLintBounds"
+                tools:srcCompat="@tools:sample/avatars" />
+        </LinearLayout>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

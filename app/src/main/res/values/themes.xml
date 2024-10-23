@@ -6,10 +6,10 @@
     </style>
 
     <style name="Theme.TutorMatematica" parent="Base.Theme.TutorMatematica" />
-    <style name="SplashTheme" parent="Theme.TutorMatematica">
-        <item name="android:windowBackground">@color/amarillo</item>
-        <item name="windowSplashScreenAnimatedIcon">@drawable/ai</item>
-        <item name="windowSplashScreenAnimationDuration">100</item>
+    <style name="SplashTheme" parent="Theme.SplashScreen">
+        <item name="android:windowBackground">@color/amarillo_pastel</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/duende</item>
+        <item name="windowSplashScreenAnimationDuration">50</item>
         <item name="postSplashScreenTheme">@style/Base.Theme.TutorMatematica</item>
     </style>
 </resources>

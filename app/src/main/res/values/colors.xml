@@ -5,4 +5,8 @@
     <color name="bg_yellow">#ffc300</color>
     <color name="bg_green">#aacc00</color>
     <color name="amarillo">#ffc300</color>
+
+    <color name="verde_suave">#90EE90</color>
+    <color name="azul_claro">#ADD8E6</color>
+    <color name="amarillo_pastel">#FFFACD</color>
 </resources>
