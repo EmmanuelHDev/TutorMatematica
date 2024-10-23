@@ -1,7 +1,5 @@
 <resources>
     <string name="app_name">Tutor Matemática</string>
-    <string name="numeros_naturales">Números Naturales</string>
-    <string name="operaciones_basicas">Operaciones Báscias</string>
     <string name="nombre_estudiante">Nombre Estudiante</string>
     <string name="icono_usuario">Ícono del usuario</string>
     <string name="Logo">LogoDelTurtorDeMatamaticas</string>
