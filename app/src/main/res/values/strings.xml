@@ -4,4 +4,6 @@
     <string name="operaciones_basicas">Operaciones Báscias</string>
     <string name="nombre_estudiante">Nombre Estudiante</string>
     <string name="icono_usuario">Ícono del usuario</string>
+    <string name="Logo">LogoDelTurtorDeMatamaticas</string>
+    <string name="holamundo">HolaMundo</string>
 </resources>
